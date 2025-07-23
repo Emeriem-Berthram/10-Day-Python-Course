@@ -29,6 +29,10 @@ print("First item:", first_item)
 last_item = inventory[-1]
 print("Last item:", last_item)
 
+#reverse indexing (negative indexing starts with -1 then from there go reverse till you get the desried index) 
+second_to_last_item =  inventory[-2]
+print("Second to last item:", second_to_last_item)
+
 # Accessing the second item (index 1)
 second_item = inventory[1]
 print("Second item:", second_item)
@@ -50,7 +54,7 @@ print("\n" + "="*50)
 # Slicing lets you grab a "slice" or a sub-section of your list.
 print("\n🔪 Slicing a List to Get Multiple Items")
 
-# The syntax is list[start:stop]
+# The syntax is list[start:stop] # Start from start to stop-1
 # It gets items from the 'start' index up to, but NOT including, the 'stop' index.
 first_three_items = inventory[0:3]
 print("First three items:", first_three_items)
@@ -101,6 +105,9 @@ print("\n" + "="*50)
 # 4. Print the final list.
 # YOUR CODE HERE:
 
+# To reverse the entire list 
+first_three = inventory[:: -1]
+print ("first three:", first_three)
 
 
 print("\n" + "="*50)
